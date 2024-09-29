@@ -1,0 +1,54 @@
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.heroContent {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.heroContent h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.heroContent p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* New styles for profile section */
+.profileSection {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 20px; /* Space above the profile section */
+}
+
+.profilePicture {
+    width: 200px; /* Increase width */
+    height: 200px; /* Increase height */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the circle */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add some margin to the right for spacing */
+}
+
+
+/* Text content styling */
+.textContent {
+    text-align: left; /* Align text to the left */
+}
+
+/* Existing styles for skills section */
+.skillsSection {
+    margin-top: 20px; /* Space between sections */
+}

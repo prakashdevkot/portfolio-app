@@ -1,0 +1,37 @@
+/* src/pages/About.module.css */
+.about {
+    padding: 100px 0;
+  }
+  
+  .aboutContent {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .profilePicture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileInfo {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .profileSection {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,77 @@
+/* src/components/Navbar.module.css */
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navLogo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .navMenu {
+    display: flex;
+  }
+  
+  .navItem {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .navItem:hover {
+    color: var(--primary-color);
+  }
+  
+  .navToggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navToggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .navMenu {
+      position: fixed;
+      right: -100%;
+      top: 70px;
+      flex-direction: column;
+      background-color: var(--secondary-color);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .navMenu.active {
+      right: 0;
+    }
+  
+    .navItem {
+      padding: 15px 0;
+    }
+  
+    .navToggle {
+      display: flex;
+    }
+  }

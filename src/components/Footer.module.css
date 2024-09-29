@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.socialLinks a {
+    color: white;
+    margin: 0 10px; /* Spacing between links */
+    text-decoration: none; 
+}
+
+.socialLinks a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
